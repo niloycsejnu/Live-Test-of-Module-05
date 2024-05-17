@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.animated-text {
+    color: blue;
+}
+
+@keyframes text-animation {
+    from { color:rgb(255, 20, 255) }
+    to { color: rgb(0, 255, 115); }
+}
+
+.animated-text {
+    animation: text-animation 2s ease-in-out infinite alternate;
+}
+.main-content {
+    padding: 160px;
+}
+.animated-background {
+    background-color: lightblue;
+    
+    animation: background-animation 5s ease-in-out infinite;
+}
+@keyframes background-animation {
+    from { background-color: rgb(156, 205, 222); }
+    to { background-color: rgb(238, 236, 144); }
+}
+
+
+.footer {
+    background-color: #403939;
+    color: #d4baba;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
